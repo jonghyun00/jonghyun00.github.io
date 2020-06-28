@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>간행물.통계</title>
+<meta charset="utf-8">
+<style type="text/css">
+* {
+	padding: 0;
+	margin: 0;
+}
+li {
+	list-style-type: none;
+}
+.clear {
+	clear: both;
+}
+header{
+	width: 1300px;
+	height: 100px;
+	margin-top: 10px;
+	border: 0px dotted #bbbbbb;
+}
+#logo{
+	float: left;
+	margin-top: 10px;
+}
+#top{
+	float: right;
+	margin: 30px 20px 0 0;
+}
+nav{
+	width: 1300px;
+	height: 70px;
+	margin-top: 10px;
+	border: 0px solid #bbbbbb;
+}
+nav li{
+	display: inline-block;
+	margin: 20px 30px;
+}
+section {
+	float: right;
+	width:1020px;
+	border: 0px solid #bbbbbb;
+	margin-top: 35px;		
+	margin-bottom: 80px;
+}
+aside {
+	width: 250px;
+	float: left;
+	margin-top: 35px;
+}
+aside>ul>li  {
+	font-size: 17px;
+	font-weight: bold;
+	color: #696969;
+	border-bottom: 1px solid #bbbbbb;
+}
+aside>ul>li a {
+	display: block;
+	padding: 10px 0px 10px 10px;
+	text-decoration: none;
+	color: #696969;
+}
+footer{
+	width: 1300px;
+	height: 100px;
+	border: 0px solid #bbbbbb;
+}
+#address {
+	float: left;
+	margin: 10px 0 0 10px;
+}
+#customer {
+	float: right;
+	margin: 10px 0 0 180px;
+}
+#page {
+	width: 1300px;
+	margin: auto;
+	border: 0px solid #bbbbbb;
+}
+.side {
+	background-color: #F5F5F5;
+	padding: 20px 10px 20px 10px;		
+	border-bottom: 1px solid #bbbbbb;
+}
+.side li {
+	font-size: 16px;
+	font-weight: bold;
+	list-style-type: disc;
+	margin-left: 14px;
+	margin-bottom: 5px;
+}
+.side li a {
+	display: block;		
+	color: #696969;
+	text-decoration: none;
+}
+.side li a:hover {
+	text-decoration: underline;
+	text-shadow: 0.01px 0.01px black;
+}
+#name {
+	font-size: 27px;		
+	padding-bottom: 15px;
+	font-weight: 1000;
+	border-bottom: 0px solid #bbbbbb;
+	color: #696969;
+	padding-top: 10px;
+}
+.back {
+	background-color: #008B8B;
+}
+.back a{
+	color: white;
+}
+#back2 {
+	color: #008B8B !important;
+}
+#title2 {
+	color: #333333;
+	font-size: 28px;
+	padding-top: 5px;
+	padding-bottom: 15px;
+	border-bottom: 2px solid black;
+}
+.sum {
+	position: absolute;
+	right: 0;
+	top: -0.8cm;
+}
+.sum span {
+	font-size: 14px;
+}
+.sum span a {
+	text-decoration: none;
+	color: #696969;
+	font-weight: bold;
+}	
+#all {
+	height: 50px;
+	margin-top: 40px;
+	color:#696969;
+	font-size: 15px;
+	font-weight: 600;
+}
+#allst{
+	float:left; 
+	margin-top: 10px;
+}
+#bodycontent {
+	border-top: 1px solid black;
+}
+.bodycontentli {
+	padding: 15px 20px 15px 20px;
+	border-bottom: 1px solid #e4e4e4;
+	height: 8px;
+}
+.bodycontentli a {
+	text-decoration: none;
+	color: #696969;
+	font-size: 80%;
+}
+.bodycontentli a:hover {
+	text-decoration: underline;
+}
+.bodycontentlit {
+	background-color: #F5F5F5;
+}	
+.content {
+	color: #333333;
+	font-size: 28px;
+	padding-top: 5px;
+	padding-bottom: 15px;
+	border-bottom: 2px solid black;
+	margin-top: 30px;
+}
+.me {
+	float: right;
+}
+.me span {
+	font-size: 17px;
+}
+.me span a {
+	text-decoration: none;
+	color: #555;
+	font-weight: bold;
+}
+.set {
+	position: absolute;
+	right: 5px;
+	top: 250px;
+}
+.share {
+	background-image: url('./img/share.png');
+	width: 40px;
+	height: 43px;
+	border-radius: 50% 50%;
+}
+.share:hover {
+	background-image: url('./img/share2.png');
+	width: 40px;
+	height: 43px;
+	border-radius: 50% 50%;
+}
+.print {
+	background-image: url('./img/print.png');
+	width: 42px;
+	height: 42px;
+	border-radius: 50% 50%;
+}
+.print:hover {
+	background-image: url('./img/print2.png');
+	width: 42px;
+	height: 42px;
+	border-radius:50% 50%;
+}
+</style>
+</head>
+<body id="page">
+<header>
+<div id="logo">
+	<img src="./img/KDCD.png">
+</div>
+<div id="top">
+로그인 ㅣ 회원가입 ㅣ <a href="./introducing.html">마이페이지</a> ㅣ 고객센터
+</div>
+</header>
+<div class="clear"></div>
+<nav>
+	<ul>
+		<li> <a href="./p1.html">감염병</a></li>
+		<li> <a href="./p2.html">건강정보</a></li>
+		<li> 정책정보 </li>
+		<li> 연구개발 </li>
+		<li> 알림.자료 </li>
+		<li> <a href="./p3.html">간행물.통계</a> </li>
+		<li> <a href="./p4.html">민원.정보공개</a> </li>
+		<li> 기관소개 </li>
+		<li> 사업별홈페이지 </li>
+	</ul>
+</nav>
+<section>
+<div class="me">
+<span><a href="index.html"><img src="./img/home.png"></a> > <a href=""> 간행물·통계 </a> > <a href="">간행물</a> > <a href="" style="color:#008B8B">주간건강과질병</a></span></br>
+	<span style="float: right;">
+		<a href=""><img class="share"></a>
+		<a href=""><img class="print"></a>
+	</span>
+</div>
+<h2 class="content">주간건강과질병</h2>
+<div>
+	<img src="./img/wn.png" height="90" width="1025">
+</div>	
+<div >
+	<ul id="bodycontent">
+		<li class="bodycontentli bodycontentlit"><a href=""><strong> 제13권 제25호 [날짜 : 2020-06-18] </strong></a></li>
+		<li class="bodycontentli"><a href=""> [코로나19 주간 발생보고서] 코로나바이러스감염증-19 주간 발생보고서(2020.6.13. 기준) </a></li>
+		<li class="bodycontentli"><a href=""> 2019년 국외 메르스 발생 현황 </a></li>
+		<li class="bodycontentli"><a href=""> 2016∼2019년 크로이츠펠트-야콥병 발생 현황 </a></li>
+		<li class="bodycontentli"><a href=""> 국내 다중이용시설 유래 레지오넬라 환경균주의 분포양상 분석, 2018∼2019 </a></li>
+		<li class="bodycontentli bodycontentlit"><a href=""><strong> 제13권 제24호 [날짜 : 2020-06-11] </strong></a></li>
+		<li class="bodycontentli"><a href=""> [코로나19 주간 발생보고서] 코로나바이러스감염증-19 주간 발생보고서(2020.6.6. 기준) </a></li>
+		<li class="bodycontentli"><a href=""> [건강이슈] 세계헌혈자의 날(World Blood Donor Day) </a></li>
+		<li class="bodycontentli"><a href=""> 국가 혈액수급감시 체계 개선 방안 연구 결과 </a></li>
+		<li class="bodycontentli"><a href=""> 수혈자 역추적 조사 지침 개정 </a></li>
+		<li class="bodycontentli"><a href="">[만성질환 통계] 활동제한율 추이, 2007~2018 </a></li>
+		<li class="bodycontentli bodycontentlit"><a href=""><strong> 제13권 제23호 [날짜 : 2020-06-04]</strong></a></li>
+		<li class="bodycontentli"><a href=""> [코로나19 주간 발생보고서] 코로나바이러스감염증-19 주간 발생보고서(2020.5.30. 기준) </a></li>
+		<li class="bodycontentli"><a href=""> 국립인천공항검역소 코로나바이러스감염증-19 검역단계 대응 보고 </a></li>
+		<li class="bodycontentli"><a href=""> 샌드위치 효소면역분석법을 이용한 페스트 검사법 개발 </a></li>
+		<li class="bodycontentli"><a href=""> 우리나라 중고등학생의 구강건강 행태 현황과 추이 </a></li>
+		<li class="bodycontentli"><a href=""> [만성질환 통계] 구강기능제한율 추이(2007~2018) 및 저작불편호소율 추이(2007~2018) </a></li>
+		<li class="bodycontentli bodycontentlit"><a href=""><strong> 제13권 제22호 [날짜 : 2020-05-28] </strong></a></li>
+		<li class="bodycontentli"><a href=""> [코로나19 주간 발생보고서] 코로나바이러스감염증-19 주간 발생보고서(2020.5.23. 기준) </a></li>
+		<li class="bodycontentli"><a href=""> 2019년 집단시설 결핵역학조사 결과 </a></li>
+		<li class="bodycontentli"><a href=""> 성인에서 담배 종류별 사용률의 변화: 담배 판매량과 비교 </a></li>
+		<li class="bodycontentli"><a href=""> [만성질환 통계] 현재흡연률 추이(2007~2018)와 현재흡연자의 금연시도 및 금연계획률 추이(2007~2018) </a></li>
+		<li class="bodycontentli bodycontentlit"><a href=""><strong> 제13권 제21호 [날짜 : 2020-05-21] </strong></a></li>
+		<li class="bodycontentli"><a href=""> [코로나19 주간 발생보고서] 코로나바이러스감염증-19 주간 발생보고서(2020.5.16. 기준) </a></li>
+		<li class="bodycontentli"><a href=""> 희귀질환 극복의 날(Rare Disease Day) </a></li>
+		<li class="bodycontentli"><a href=""> 국내 희귀질환관리사업 추진 현황 </a></li>
+		<li class="bodycontentli"><a href=""> 2020년 1∼4월 감염병 감시체계 운영결과 </a></li>
+		<li class="bodycontentli bodycontentlit"><a href=""><strong> 제13권 제20호 [날짜 : 2020-05-14] </strong></a></li>
+		<li class="bodycontentli"><a href=""> [코로나19 주간 발생보고서] 코로나바이러스감염증-19 주간 발생보고서(2020.5.9. 기준) </a></li>
+		<li class="bodycontentli"><a href=""> 저항성고혈압의 원인, 치료, 임상적 중요성 및 국내 현황 </a></li>
+		<li class="bodycontentli"><a href=""> 폐동맥고혈압에서 심층표현형 연구를 위한 장기 코호트 연구 플랫폼(PHOENIKS)의 임상적 의미 </a></li>
+		<li class="bodycontentli"><a href=""> 최근 5년간 입국단계에서의 발열·호흡기 유증상자 조사 </a></li>
+		<li class="bodycontentli"><a href=""> 지역사회에서 발생한 코로나19 확진환자에 대한 사례조사 </a></li>
+		<li class="bodycontentli"><a href=""> [만성질환 통계] 고혈압 유병률 추이(2007~2018)와 고혈압 인지율, 치료율, 조절률 수준 및 추이(2007~2018) </a></li>
+		<li class="bodycontentli bodycontentlit"><a href=""><strong> 제13권 제19호 [날짜 : 2020-05-07] </strong></a></li>
+		<li class="bodycontentli"><a href=""> [코로나19 주간 발생보고서] 코로나바이러스감염증-19 주간 발생보고서(2020.5.2. 기준) </a></li>
+		<li class="bodycontentli"><a href=""> [건강이슈] 세계 천식의 날(World Asthma Day) </a></li>
+		<li class="bodycontentli"><a href=""> 실시간 원격모기감시장비 시범운영 </a></li>
+		<li class="bodycontentli"><a href=""> 말라리아 매개모기 종합방제 시범사업 결과보고 </a></li>
+		<li class="bodycontentli"><a href=""> 한국 B형간염의 사회경제적 비용, 2002∼2015년 </a></li>
+		<li class="bodycontentli bodycontentlit"><a href=""><strong> 제13권 제18호 [날짜 : 2020-04-29] </strong></a></li>
+		<li class="bodycontentli"><a href=""> [코로나19 주간 발생보고서] 코로나바이러스감염증-19 주간 발생보고서(2020.4.25. 기준) </a></li>
+		<li class="bodycontentli"><a href=""> 2019년도 초ㆍ중학교 입학생 예방접종 확인사업 결과 </a></li>
+		<li class="bodycontentli"><a href=""> 인플루엔자 예방접종 효과평가 체계 구축 및 2018-2019절기 효과평가 실시 </a></li>
+		<li class="bodycontentli"><a href=""> 임신부 인플루엔자 예방접종의 안전성 및 국외 이상반응관리 현황연구 </a></li>
+		<li class="bodycontentli"><a href=""> 결핵 환자 가족접촉자 검진 사업 결과 분석 </a></li>
+		<li class="bodycontentli"><a href=""> [만성질환 통계] 청소년의 신체활동 실천율 추이(2009~2019) 및 청소년의 근력강화운동 실천율 추이(2007~2019) </a></li>
+		<li class="bodycontentli bodycontentlit"><a href=""><strong> 제13권 제17호 [날짜 : 2020-04-23] </strong></a></li>
+		<li class="bodycontentli"><a href=""> 코로나바이러스감염증-19 주간 발생보고서(2020.4.18. 기준) </a></li>
+		<li class="bodycontentli"><a href=""> 2019년 세계 말라리아 보고서 </a></li>
+		<li class="bodycontentli"><a href=""> 2019년 국내 말라리아매개모기 감시 현황 </a></li>
+		<li class="bodycontentli"><a href=""> 2019년 국내 말라리아 발생현황 및 퇴치사업 추진결과 </a></li>
+		<li class="bodycontentli"><a href=""> 국가 잠복결핵 코호트의 활동성 결핵 발생 현황 분석 </a></li>
+		<li class="bodycontentli bodycontentlit"><a href=""><strong> 제13권 제16호 [날짜 : 2020-04-16] </strong></a></li>
+		<li class="bodycontentli"><a href=""> 코로나바이러스감염증-19 주간 발생보고서(2020.4.11. 기준) </a></li>
+		<li class="bodycontentli"><a href=""> COVID-19 Special Issue: Brief report on the situation in China during the COVID-19 outbreak </a></li>
+		<li class="bodycontentli"><a href=""> COVID-19 Special Issue: Contact tracing results of the first confirmed COVID-19 case in the Republic of Korea </a></li>
+		<li class="bodycontentli"><a href=""> COVID-19 Special Issue: Investigation of COVID-19 outbreaks through Zumba dance classes in Korea </a></li>
+		<li class="bodycontentli"><a href=""> 2019년 진단용 방사선 안전관리 통계 </a></li>
+		<li class="bodycontentli"><a href=""> 영상의학검사에서의 환자 피폭선량 평가 프로그램 </a></li>
+		<li class="bodycontentli"><a href=""> 치과분야의 방사선안전관리시스템 실태와 인식개선 </a></li>
+		<li class="bodycontentli"><a href=""> [만성질환 통계] 신체활동 실천율 추이(2008~2018)와 주관적 비만인지율 및 체중감소 시도율 추이(2007~2018) </a></li>
+		<li class="bodycontentli bodycontentlit"><a href=""><strong> 제13권 제15호 [날짜 : 2020-04-09] </strong></a></li>
+		<li class="bodycontentli"><a href=""> [코로나19 주간 발생보고서] 코로나바이러스감염증-19 주간 발생보고서(2020.4.4. 기준) </a></li>
+		<li class="bodycontentli"><a href=""> 15∼24세 청소년 대상의 영국 클라미디아감염증 국가검진사업 </a></li>
+		<li class="bodycontentli"><a href=""> 최근 5년간(2014∼2018) 국내 성매개감염병 신고 발생 동향 </a></li>
+		<li class="bodycontentli"><a href=""> [만성질환 통계] 청소년의 우울감 경험률 추이(2007~2019) 및 청소년의 스트레스인지율 추이(2007~2019) </a></li>
+		<li class="bodycontentli bodycontentlit"><a href=""><strong> 제13권 제14호 [날짜 : 2020-04-02] </strong></a></li>
+		<li class="bodycontentli"><a href=""> [코로나19 주간 발생보고서] 코로나바이러스감염증-19 주간 발생보고서(2020.3.28. 기준) </a></li>
+		<li class="bodycontentli"><a href=""> 2019년 참진드기 발생밀도 조사 현황 </a></li>
+		<li class="bodycontentli"><a href=""> 2019년 쯔쯔가무시증 매개 털진드기 전국 분포조사 현황 </a></li>
+		<li class="bodycontentli"><a href=""> 2019년 결핵환자 신고현황 </a></li>
+		<li class="bodycontentli"><a href=""> 2018년 국내 급성이완성마비 병원체 감시 </a></li>
+		<li class="bodycontentli bodycontentlit"><a href=""><strong> 제13권 제13호 [날짜 : 2020-03-26] </strong></a></li>
+		<li class="bodycontentli"><a href=""> 줌바댄스 강습을 통해 발생한 코로나19 집단발병조사 </a></li>
+		<li class="bodycontentli"><a href=""> 2019년 노인 폐결핵 검진 시범사업 결과 분석 </a></li>
+		<li class="bodycontentli"><a href=""> [만성질환 통계] 스트레스인지율 추이, 2007~2018 </a></li>
+		<li class="bodycontentli bodycontentlit"><a href=""><strong> 제13권 제12호 [날짜 : 2020-03-19] </strong></a></li>
+		<li class="bodycontentli"><a href=""> 2019년 쪽방거주자 폐결핵검진 시범사업 결과 </a></li>
+		<li class="bodycontentli"><a href=""> 결핵 코호트 구축 및 운영 </a></li>
+		<li class="bodycontentli"><a href=""> 외상성 뇌손상의 현황 및 예방 전략 </a></li>
+		<li class="bodycontentli bodycontentlit"><a href=""><strong> 제13권 제11호 [날짜 : 2020-03-12] </strong></a></li>
+		<li class="bodycontentli"><a href=""> 세계 콩팥의 날(World Kidney Day) </a></li>
+		<li class="bodycontentli"><a href=""> 만성신장질환 코호트의 국제 공동 연구(iNET-CKD) </a></li>
+		<li class="bodycontentli"><a href=""> 근거 기반의 미세먼지 건강수칙 개발 </a></li>
+		<li class="bodycontentli"><a href=""> [만성질환 통계] 만성콩팥병(중등도 이상) 유병률 추이, 2008~2018 </a></li>
+		<li class="bodycontentli bodycontentlit"><a href=""><strong> 제13권 제10호 [날짜 : 2020-03-05] </strong></a></li>
+		<li class="bodycontentli"><a href=""> 신종코로나바이러스감염증-19 중국 상황에 대한 짤막한 보고 </a></li>
+		<li class="bodycontentli"><a href=""> 세계 여성의 날(International Women’s Day) </a></li>
+		<li class="bodycontentli"><a href=""> 여자 청소년의 월경용품 사용 현황과 인식 </a></li>
+		<li class="bodycontentli"><a href=""> [만성질환 통계] 고중성지방혈증 유병률 추이(2008∼2018) 및 포화지방산 1일 섭취량 추이(2013∼2018) </a></li>
+		<li class="bodycontentli bodycontentlit"><a href=""><strong> 제13권 제9호 [날짜 : 2020-02-27] </strong></a></li>
+		<li class="bodycontentli"><a href=""> 한국 초기 코로나바이러스감염증-19 환자 28명의 역학적 특성 </a></li>
+		<li class="bodycontentli"><a href=""> 2011∼2018년 국외유입감염병의 감시 특성 </a></li>
+		<li class="bodycontentli"><a href=""> [만성질환 통계] 치주질환 유병률 추이(2008∼2018) 및 영구치우식 유병률 추이(2008∼2018) </a></li>
+		<li class="bodycontentli bodycontentlit"><a href=""><strong> 제13권 제8호 [날짜 : 2020-02-20] </strong></a></li>
+		<li class="bodycontentli"><a href=""> 두창바이러스의 실험실적 감별검사 소개 </a></li>
+		<li class="bodycontentli"><a href=""> 압타머를 이용한 감염병 검사법 개발 연구동향 소개 </a></li>
+		<li class="bodycontentli bodycontentlit"><a href=""><strong> 제13권 제7호 [날짜 : 2020-02-13] </strong></a></li>
+		<li class="bodycontentli"><a href=""> 코로나바이러스감염증-19 1번 환자 접촉자 조사 결과 </a></li>
+		<li class="bodycontentli"><a href=""> 우리 국민의 당 섭취 현황 </a></li>
+		<li class="bodycontentli"><a href=""> 우리나라 청소년의 물 섭취 현황: 2019 청소년건강행태조사 결과를 중심으로 </a></li>
+		<li class="bodycontentli"><a href=""> [만성질환 통계] 영양소 섭취기준에 대한 섭취 비율(2018) 및 하루 과일, 채소 500g 이상 섭취자 분율 추이(2007~2018) </a></li>
+		<li class="bodycontentli bodycontentlit"><a href=""><strong> 제13권 제6호 [날짜 : 2020-02-06] </strong></a></li>
+		<li class="bodycontentli"><a href=""> 세계 암의 날(World Cancer Day) </a></li>
+		<li class="bodycontentli"><a href=""> 2019년도 질병관리본부 기관생명윤리위원회 운영 결과 </a></li>
+		<li class="bodycontentli"><a href=""> 2019년도 기관생명윤리위원회 등록 현황 </a></li>
+		<li class="bodycontentli bodycontentlit"><a href=""><strong> 제13권 제5호 [날짜 : 2020-01-30] </strong></a></li>
+		<li class="bodycontentli"><a href=""> 한국인 급성심근경색증 환자 등록 연구 소개 </a></li>
+		<li class="bodycontentli"><a href=""> 한국인의 식품섭취 다양성 현황과 세분화 집단 분석 </a></li>
+		<li class="bodycontentli"><a href=""> [만성질환 통계] 가공식품 선택 시 영양표시 이용률 추이, 2008~2018 </a></li>
+		<li class="bodycontentli bodycontentlit"><a href=""><strong> 제13권 제4호 [날짜 : 2020-01-23] </strong></a></li>
+		<li class="bodycontentli"><a href=""> 세계 한센병의 날(World Leprosy Day) </a></li>
+		<li class="bodycontentli"><a href=""> 국내 한센병 환자의 이해 </a></li>
+		<li class="bodycontentli"><a href=""> 2019년 국내 한센병 신환자 사례 </a></li>
+		<li class="bodycontentli"><a href=""> 2018년 국내 급성설사질환 원인 바이러스 감시 현황 </a></li>
+		<li class="bodycontentli"><a href=""> [만성질환 통계] 하루 1회 이상 외식률 추이, 2008∼2018 </a></li>
+		<li class="bodycontentli bodycontentlit"><a href=""><strong> 제13권 제3호 [날짜 : 2020-01-16] </strong></a></li>
+		<li class="bodycontentli"><a href=""> 살아있는 간 기증자의 법 제도적·의학적 선별기준 방향 </a></li>
+		<li class="bodycontentli"><a href=""> 2019년 조혈모세포·제대혈 기증 대국민 인식조사 결과 </a></li>
+		<li class="bodycontentli"><a href=""> [만성질환 통계] 아침식사 결식률 추이, 2007∼2018 </a></li>
+		<li class="bodycontentli bodycontentlit"><a href=""><strong> 제13권 제2호 [날짜 : 2020-01-09] </strong></a></li>
+		<li class="bodycontentli"><a href=""> 일개 직장 결핵역학조사 결과 </a></li>
+		<li class="bodycontentli"><a href=""> 국내 외국인 결핵환자의 결핵균 유전형 특성 분석(2017~2018년) </a></li>
+		<li class="bodycontentli"><a href=""> 2006∼2018년 급성심장정지조사 주요 결과 </a></li>
+		<li class="bodycontentli"><a href=""> [만성질환 통계] 주류소비량 국제 비교 - OECD 회원국 중심 </a></li>
+		<li class="bodycontentli bodycontentliup"><a href=""><strong> 제13권 제1호 [날짜 : 2020-01-02] </strong></a></li>
+		<li class="bodycontentli"><a href=""> 법정감염병 분류체계 전면 개편 시행 </a></li>
+		<li class="bodycontentli"><a href=""> 2020년 상반기 검역감염병 오염지역 안내 </a></li>
+		<li class="bodycontentli"><a href=""> C형간염 인식도 조사결과 및 자가 체크리스트 개발 </a></li>
+		<li class="bodycontentli"><a href=""> [만성질환 통계] 심폐소생술의 일반인 시행률 추이, 2008∼2018 </a></li>
+</ul>
+</div>
+</section>
+<aside>
+	<h2 id="name">간행물·통계</h2>
+	<ul>
+		<li class="back"><a href=""> 간행물 </a></li>
+		<ul class="side">
+			<li><a href="" id="back2"> 주간건강과질병 </a></li>
+			<li><a href=""> 감염병뉴스레터 </a></li>
+			<li><a href=""> 지역사회건강과질병 </a></li>
+			<li><a href=""> 손상예방과건강한안전사회 </a></li>
+			<li><a href=""> 혈액소식지 </a></li>
+			<li><a href=""> 오송 PHRP </a></li>
+			<li><a href=""> 질병관리백서 </a></li>
+			<li><a href=""> 국립보건연구원연보 </a></li>
+			<li><a href=""> NIH매거진 </a></li>
+		</ul>
+		<li><a href=""> 통계 </a></li>
+		<li><a href=""> 연구성과 </a></li>
+	</ul>
+</aside>
+<div class="clear"></div>
+<footer>
+<div id="address">
+	<img src="./img/address.png">
+</div>
+<div id="customer">
+	<img src="./img/customer1.png">
+</div>
+</footer>
+</body>
+</html>
